@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python main.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 55ab5742238401ccb6a79772d031cb2a
+      size: 261
+    - path: data/raw/Alzheimer_DataSet.csv
+      hash: md5
+      md5: cfda8af7fe7e40b157babd4cbb987073
+      size: 4045281
+    - path: main.py
+      hash: md5
+      md5: 9d6bcdec788b41ae6646e31277b497ab
+      size: 2553
+    - path: src/
+      hash: md5
+      md5: 3eafbb83c46070739156d9db60b15535.dir
+      size: 8811
+      nfiles: 13
+    outs:
+    - path: models/model001.pkl
+      hash: md5
+      md5: 406675107e213a06bde1775788ff0000
+      size: 274106

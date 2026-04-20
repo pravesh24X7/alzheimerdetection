@@ -16,7 +16,7 @@ def build_training_pipeline(preprocessor, model, config):
         steps.append(("feature_selection", selector))
     
     if config["pca"]["enabled"]:
-        steps.append(("pca", PCA(n_components=config["PCA"]["variance"])))
+        steps.append(("pca", PCA(n_components=config["pca"]["variance"])))
     
     steps.append(("model", model))
     return Pipeline(steps)

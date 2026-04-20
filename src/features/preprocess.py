@@ -10,7 +10,7 @@ from sklearn.impute import SimpleImputer
 def drop_null_columns(df: pd.DataFrame, threshold: float):
     null_ratio = df.isnull().mean()
     cols_to_drop = null_ratio[null_ratio > threshold].index
-    return df.drop(columns=[cols_to_drop]), list(cols_to_drop)
+    return df.drop(columns=cols_to_drop), list(cols_to_drop)
 
 
 def split_features_training_testing(df: pd.DataFrame, target: str):

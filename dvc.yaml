@@ -7,4 +7,4 @@ stages:
       - data/raw/Alzheimer_DataSet.csv
       - config/config.yaml
     outs:
-      - models/model.pkl
+      - models/model001.pkl
