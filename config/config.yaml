@@ -1,0 +1,19 @@
+data:
+  target: Diagnosis
+  test_size: 0.3
+  random_state: 83
+
+preprocessing:
+  null_threshold: 0.95
+
+model:
+  type: logistic
+  C: 0.1
+  max_iter: 500
+
+feature_selection:
+  enabled: true
+
+pca:
+  enabled: true
+  variance: 0.95

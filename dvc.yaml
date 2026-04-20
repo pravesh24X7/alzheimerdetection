@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python main.py
+    deps:
+      - main.py
+      - src/
+      - data/raw/Alzheimer_DataSet.csv
+      - config/config.yaml
+    outs:
+      - models/model.pkl
